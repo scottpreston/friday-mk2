@@ -1,5 +1,5 @@
 var SerialPort = require('serialport');
-var port = new SerialPort('/dev/cu.usbmodem1D1121', {
+var port = new SerialPort('/dev/ttyACM0', {
     parser: SerialPort.parsers.readline('\n')
   }, function(error) {
     if (error) {
@@ -10,7 +10,7 @@ var port = new SerialPort('/dev/cu.usbmodem1D1121', {
 
 port.on('data', function (data) {
   var vals = data.split("~");
-  if (vals[0]>2) console.log(new Date() + " -- right");
-  if (vals[1]>2) console.log(new Date() + " -- left");
-  //console.log('Data: ' + data);
+ // if (vals[0]>2) console.log(new Date() + " -- right");
+ // if (vals[1]>2) console.log(new Date() + " -- left");
+  console.log('Data: ' + data);
 });
