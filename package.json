@@ -1,7 +1,19 @@
 {
-  "author": "your-name",
-  "name": "your-project-name",
-  "description": "description here",
-  "version": "0.0.1",
-  "dependencies": {}
+  "author": "Scott Preston",
+  "name": "friday-mk2",
+  "description": "The Code For Mark2 Iron Man Suit",
+  "version": "1.0.0",
+  "scripts" : {
+     "copylibs": "cp -r node_modules/jquery/dist public/npm/jquery && cp -r node_modules/boostrap/dist public/npm/bootstrap",
+     "start": "node lib/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "rpi-gpio": "^0.7.0",
+    "serialport": "^4.0.7"
+  }
 }
