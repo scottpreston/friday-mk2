@@ -4,7 +4,7 @@
   "description": "The Code For Mark2 Iron Man Suit",
   "version": "1.0.0",
   "scripts": {
-    "copylibs": "cp -r node_modules/jquery/dist public/npm/jquery && cp -r node_modules/bootstrap/dist public/npm/bootstrap",
+    "copylibs": "mkdir public/npm && cp -r node_modules/jquery/dist public/npm/jquery && cp -r node_modules/bootstrap/dist public/npm/bootstrap",
     "start": "node lib/index.js"
   },
   "dependencies": {
