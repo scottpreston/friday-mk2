@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>F.R.I.D.A.Y. - Control Page</title>
+    <link href="npm/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/friday.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">F.R.I.D.A.Y. - Control Page</a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>F.R.I.D.A.Y. - Control Page</h1>
+
+        <p class="lead">This is a simple control for F.R.I.D.A.Y. (the computer controlling the Mark 2).</p>
+        <div class="alert alert-success biometrics-online">
+            <strong>Connected!</strong> The biometrics are online.
+        </div>
+        <div class="alert alert-danger biometrics-offline">
+            <strong>Not Connected!</strong> The biometrics are offline.
+        </div>
+        <div class="alert alert-danger server-offline">
+            <strong>F.R.I.D.A.Y. Offline</strong> Please login to the server something is not right.
+        </div>
+        <div class="row">
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-4">
+                <button class="btn btn-block btn-success openSuit">Open Suit <span class="glyphicon glyphicon-resize-full"></span></button>
+                <button class="btn btn-block btn-danger closeSuit">Close Suit <span class="glyphicon glyphicon-resize-small"></span></button>
+            </div>
+            <div class="col-md-4">&nbsp;</div>
+        </div>
+        <div class="row"><br><br></div>
+        <div class="row">
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-4">
+                <button class="btn btn-block btn-primary openSuit">Left Up <span class="glyphicon glyphicon-upload"></span></button>
+                <button class="btn btn-block btn-primary closeSuit">Left Down <span class="glyphicon glyphicon-download"></span></button>
+            </div>
+            <div class="col-md-4">&nbsp;</div>
+        </div>
+        <div class="row"><br><br></div>
+        <div class="row">
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-4">
+                <button class="btn btn-block btn-info openSuit">Right Up <span class="glyphicon glyphicon-upload"></span></button>
+                <button class="btn btn-block btn-info closeSuit">Right Down <span class="glyphicon glyphicon-download"></span></button>
+            </div>
+            <div class="col-md-4">&nbsp;</div>
+        </div>
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+<script src="npm/jquery/jquery.min.js"></script>
+<script src="npm/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/friday-client.js"></script>
+
+</body>
+</html>
